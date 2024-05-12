@@ -6,33 +6,45 @@
     <title>Agenda</title>
     <style>
         body{
-          /*  align-items: flex-start;*/
+            font-size:small;
         }
         table{
-            
+           
+            width: 100%;
             border-top: 1px solid #cacaca;
             border-bottom: 1px solid #cacaca;
             border-collapse: collapse;
         }
         td {
+          
             color: rgb(63, 63, 63);
             border-right:1px solid #cacaca;
           
         }
         .time{
+          
             border-top: 1px solid #cacaca;
+           
         }
         .tableau_blue{
             background-color: rgb(174, 223, 242);
             color: black;
-            padding: 10px;
+            padding: 4px;
             border-radius: 10px;
+           
             text-align: center;
         }
         .tableau_orange{
             background-color: rgb(251, 200, 107);
             color: black;
-            padding: 10px;
+           padding: 4px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .tableau_green{
+            background-color:rgb(158, 246, 158);
+            color: black;
+           padding: 4px;
             border-radius: 10px;
             text-align: center;
         }
@@ -44,7 +56,7 @@
 <body>
     <table>
         <tr>
-            <td>
+            <td class="time" rowspan="2" >
                 08:00
             </td>
             <td>
@@ -55,8 +67,10 @@
             </td>
 
         </tr>
+       <tr></tr>
         <tr>
-            <td class="time">
+            <td class="time" rowspan="2" >
+        
                 08:30
             </td>
             <td>
@@ -67,11 +81,13 @@
                 </div>
             </td>
         </tr>
+        <tr></tr>
         <tr>
-            <td class="time">
+            <td class="time" >
+                
                 09:00
             </td>
-            <td rowspan="3">
+            <td rowspan="2" >
                 <div class="tableau_orange">
                     (9h00-10h00) <br>
                     Plénière par Dr. Salvatore Citraro   <br>                                                                                                                                                      
@@ -80,26 +96,31 @@
                 </div>
             </td>
         </tr>
+
         <tr>
-            <td class="time">
+            <td class="time" >
+
                 09:30
             </td>
         </tr>
+        <tr></tr>
         <tr>
             <td class="time">
                 10:00
             </td>
         </tr>
+        <tr></tr>
         <tr>
             <td class="time">
                 10:30
             </td>
         </tr>
+        <tr></tr>
         <tr>
-            <td class="time">
+            <td class="time" >
                 11:00
             </td>
-            <td class="colspan">
+            <td class="colspan" >
                 <div class="tableau_orange">
                     (11h00-11h20) <br>
                     A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
@@ -110,7 +131,7 @@
                     Synergizing Pharmacophore Modeling and Deep Learning for Predicting Molecular Activity                 
                     <br>
                 </div>
-                <div class="tableau_orange">
+                <div class="tableau_green">
                     (11h00-11h20) <br>
                     Resource Allocation in 5G networks and Beyond: A Comprehensive Survey
 
@@ -120,14 +141,54 @@
            
           
         </tr>
+       
+       
         <tr>
             <td class="time">
                 11:30
+            </td>
+            <td class="colspan" rowspan="2">
+                <div class="tableau_orange">
+                    (11h25-11h45) <br>
+                    Survey on Solving Methods Of Inverse Problems
+                    <br>
+                </div>
+            
+                <div class="tableau_blue">
+                    (11h25-11h45) <br>
+                    Predicting Discourse Coherence Using Deep Neural Networks
+                    <br>
+                </div>
+          
+                <div class="tableau_green">
+                    (11h25-11h45) <br>
+                    Monte Carlo Tree Search for Community Detection MCTS-CD
+                    <br>
+                </div>
             </td>
         </tr>
         <tr>
             <td class="time">
                 12:00
+            </td>
+            <td class="colspan" >
+                <div class="tableau_orange">
+                    (11h25-11h45) <br>
+                    Survey on Solving Methods Of Inverse Problems
+                    <br>
+                </div>
+            
+                <div class="tableau_blue">
+                    (11h25-11h45) <br>
+                    Predicting Discourse Coherence Using Deep Neural Networks
+                    <br>
+                </div>
+          
+                <div class="tableau_green">
+                    (11h25-11h45) <br>
+                    Monte Carlo Tree Search for Community Detection MCTS-CD
+                    <br>
+                </div>
             </td>
         </tr>
         <tr>
