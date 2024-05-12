@@ -19,6 +19,9 @@
             border-right:1px solid #cacaca;
           
         }
+        .time{
+            border-top: 1px solid #cacaca;
+        }
         .tableau_blue{
             background-color: rgb(174, 223, 242);
             color: black;
@@ -33,20 +36,19 @@
             border-radius: 10px;
             text-align: center;
         }
+        .colspan{
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <table>
         <tr>
             <td>
-                08h00
+                08:00
             </td>
             <td>
                 <div class="tableau_blue">
-                    (08h00-08h30) <br>
-                Enregistrement des participants <br>
-                </div>
-                <div class="tableau_orange">
                     (08h00-08h30) <br>
                 Enregistrement des participants <br>
                 </div>
@@ -54,21 +56,127 @@
 
         </tr>
         <tr>
-            <td>
-                08h30
+            <td class="time">
+                08:30
             </td>
             <td>
+                <div class="tableau_orange">
+                    (08h30-09h00) <br>
+                    Mot de bienvenue par Mr.Koudil
+                    <br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                09:00
+            </td>
+            <td rowspan="3">
+                <div class="tableau_orange">
+                    (9h00-10h00) <br>
+                    Plénière par Dr. Salvatore Citraro   <br>                                                                                                                                                      
+                    "Beyond Structure: Exploring Feature-rich Networks for Social Media and Language Analysis"
+                    <br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                09:30
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                10:00
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                10:30
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                11:00
+            </td>
+            <td class="colspan">
+                <div class="tableau_orange">
+                    (11h00-11h20) <br>
+                    A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                    <br>
+                </div>
                 <div class="tableau_blue">
-                    (08h00-08h30) <br>
-                Enregistrement des participants <br>
+                    (11h00-11h20) <br>
+                    Synergizing Pharmacophore Modeling and Deep Learning for Predicting Molecular Activity                 
+                    <br>
                 </div>
                 <div class="tableau_orange">
-                    (08h00-08h30) <br>
-                Enregistrement des participants <br>
+                    (11h00-11h20) <br>
+                    Resource Allocation in 5G networks and Beyond: A Comprehensive Survey
+
+                    <br>
                 </div>
             </td>
-
+           
+          
         </tr>
+        <tr>
+            <td class="time">
+                11:30
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                12:00
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                12:30
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="time">
+                13;00
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                13:30
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                14:00
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                14:30
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                15:00
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                15:30
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                16:00
+            </td>
+        </tr>
+        <tr>
+            <td class="time">
+                16:30
+            </td>
+        </tr>
+
     </table>
 </body>
 </html>
