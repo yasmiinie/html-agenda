@@ -12,7 +12,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-           width: 95%;
+           width: 96%;
             border-top: 1px solid #cacaca;
             border-bottom: 1px solid #cacaca;
             border-collapse: collapse;
@@ -25,6 +25,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             max-lines: 2;
+         
+            align-items: stretch;
         }
  
         .timeTable td{
@@ -37,8 +39,10 @@
         .tableau_blue{
             background-color: lightblue;
             color: black;
+            padding:4px;
             padding-bottom: 10px;
             border-radius: 7px;
+            overflow: hidden;
           /*  height: 100%;*/
 
         }
@@ -47,7 +51,10 @@
             color: black;
            padding: 4px;
            border-radius: 7px;
+           overflow: hidden;
+          
            /* height: 100%;*/
+         
            
         }
         .tableau_green{
@@ -55,8 +62,10 @@
            height: 100%;*/
             background-color: rgb(174, 255, 127);
             color: black;
-           padding: 4px;
+            padding: 4px;
            border-radius: 7px;
+           overflow: hidden;
+         
        
         }
         .tableau_pink{
@@ -65,6 +74,7 @@
               background-color:pink;
              padding: 4px;
              border-radius: 7px;
+             overflow: hidden;
         } 
 
         .colspan{
@@ -86,12 +96,26 @@
             max-lines: 2;
          }
          .first{
-          height: 80px;
+           height:45px;
+           width:97%;
          }
+         .second{
+            height:45px;
+            width:97%;
+         
+          }
+          .third{
+            height:40px;
+            width:97%;
+          }
+          .forth{
+            height:55px;
+            width:97%;
+          }
     
          @media screen and (min-width:600px) {
             td{
-                font-size: x-small;
+                font-size: small;
                 height: 50px;
             }
             .timeTable td{
@@ -205,7 +229,7 @@
         <tr>
             <td>
                 <div class="tableau_blue" style="height: 100%;">
-                    (08h00-08h30) <br>
+                    (08h00-08h30) <br><br>
                 Enregistrement des participants <br>
                 </div>
             </td>
@@ -225,8 +249,8 @@
            
             <td  rowspan="3">
                 <div class="tableau_orange" style="height: 100%;">
-                    (9h00-10h00) <br>
-                    Plénière par Dr. Salvatore Citraro   <br>                                                                                                                                                      
+                    (9h00-10h00) <br><br>
+                    Plénière par Dr. Salvatore Citraro  <br> <br>                                                                                                                                                      
                     "Beyond Structure: Exploring Feature-rich Networks for Social Media and Language Analysis"
                     <br>
                 </div>
@@ -269,27 +293,27 @@
         <td> 
          <table style="width: 100%;">
             <tr style="background-color: antiquewhite;">
-                <td style="width:26%;   border-right:1px solid #cacaca">
+                <td style="width:28%;   border-right:1px solid #cacaca">
                    
                    <b>AI techniques</b><br>
                     Salle:  XXX    
                     <br>Mr.Zegour
                 </td>
-                <td style="width:26%;  border-right:1px solid #cacaca">
+                <td style="width:25%;  border-right:1px solid #cacaca">
                    
                      
                     <b>AI-powered Applications</b><br>
                     Salle:  XXX    
                     <br>Mr.Haddadou
                 </td>
-                <td style="width:26%;  border-right:1px solid #cacaca">
+                <td style="width:24%;  border-right:1px solid #cacaca">
                    
                       
                     <b>Emerging Technologies</b><br>
                     Salle:  XXX    
                     <br>Mr. Ghomari
                 </td>
-                <td style="width:19%">
+                <td style="width:21%">
                    
                       
                     <b>Data Science Applications</b><br>
@@ -308,90 +332,92 @@
 
 
         <tr >
-            <td  rowspan="4">
-               <table class="sessionTable" style="border:0px ; width:100%">
+            <td>
+               <table class="sessionTable" style="border:0px ; width:100% ;  ">
                 <tr >
                     <td  >
-              <div >
-                    <div class="tableau_pink " >
+              <div style="display:flex; flex-direction:column; width:100%;">
+                    <div class="tableau_pink first"  >
                         (11h00-11h20) <br>
                         A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
                         <br>
                     </div>
             
-                    <div class="tableau_orange">
+                    <div class="tableau_orange second">
                         (11h25-11h45) <br>
                         Survey on Solving Methods Of Inverse Problems
                         <br>
                     </div>
-                    <div class="tableau_blue">
+                    <div class="tableau_blue third">
                         (11h50-12h10) <br>
                         Language Models for Data Preparation Automation : Literature Review and Case Study
                         <br>
                     </div>
                     
+                    
                 </div>
                 </td>
                 <td >
-                    <div class="tableau_pink">
-                        (11h25-11h45) <br>
-                        Partitioned Trees
+                    <div class="tableau_pink first">
+                        (11h00-11h20) <br>
+                        Synergizing Pharmacophore Modeling and Deep Learning for Predicting Molecular Activity
                         <br>
                     </div>
             
-                    <div class="tableau_orange">
+                    <div class="tableau_orange second">
                         (11h25-11h45) <br>
-                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        Predicting Discourse Coherence Using Deep Neural Networks
                         <br>
                     </div>
-                    <div class="tableau_blue">
-                        (11h25-11h45) <br>
-                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                    <div class="tableau_blue third">
+                        (11h50-12h10) <br>
+                        Parkinson’s Disease Detection from Spiral and Wave Drawings using Alexnet
                         <br>
                     </div>
-                    <div class="tableau_pink">
-                        (11h25-11h45) <br>
-                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                    <div class="tableau_pink forth">
+                        (12h15-12h35) <br>
+                        Improved Brain Tumor Segmentation with Multi-Encoder U-Net Model
                         <br>
                     </div>
+               
                 </td>
                 <td >
-                    <div class="tableau_pink">
-                        (11h25-11h45) <br>
-                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                    <div class="tableau_pink first">
+                        (11h00-11h20) <br>
+                        Resource Allocation in 5G networks and Beyond: A Comprehensive Survey
                         <br>
                     </div>
             
-                    <div class="tableau_orange">
+                    <div class="tableau_orange second"  >
                         (11h25-11h45) <br>
-                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        An Efficient Genetic Algorithm for Service Placement in Fog Computing
                         <br>
                     </div>
-                    <div class="tableau_blue">
-                        (11h25-11h45) <br>
-                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                    <div class="tableau_blue third">
+                        (11h50-12h10) <br>
+                        IoT Anomaly Detection Strategies: A Roadmap for Effective Research and Implementation
                         <br>
                     </div>
                     
                 </td>
                 <td >
-                    <div class="tableau_pink">
+                    <div class="tableau_pink first" >
                         (11h00-11h20) <br>
                         Partitioned Trees
                         <br>
                     </div>
             
-                    <div class="tableau_orange">
+                    <div class="tableau_orange second" >
                         (11h25-11h45) <br>
                         Monte Carlo Tree Search for Community Detection MCTS-CD
                         <br>
                     </div>
-                    <div class="tableau_blue">
+                    <div class="tableau_blue third" >
                         (11h50-12h10) <br>
                         Business Process Activities Prediction through Capsule Neural Net framework
                         <br>
                     </div>
-                    <div class="tableau_pink">
+                    <div class="tableau_pink forth" >
                         (12H15-12h35) <br>
                         From  Conventional ETL To RDF KG mappings: Retrospective review
                         <br>
@@ -405,17 +431,9 @@
          
         </tr>
       
-      <tr> <td>
 
-      </td></tr>
-      <tr >
-        <td></td>
-      </tr>
-      <tr >
-        <td></td>
-      </tr>
         <tr>
-            <td>
+            <td rowspan="4"> 
                 <div class="tableau_pink" style="height:100%">
                     (12h45-14h00) <br>
                     Pause Dejeuner
@@ -424,6 +442,15 @@
                 </div>
             </td>
             
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
         </tr>
         <tr>
             <td>
