@@ -6,11 +6,12 @@
     <title>Agenda</title>
     <style>
         body{
-          
+            display: flex;
+            text-align: center;
+           
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-           
            width: 95%;
             border-top: 1px solid #cacaca;
             border-bottom: 1px solid #cacaca;
@@ -19,59 +20,53 @@
   
         td {
             color: rgb(63, 63, 63);
-            height: 30px;
-            font-size:xx-small;
+            height: 60px;
+            font-size: 10px;
             overflow: hidden;
             text-overflow: ellipsis;
+            max-lines: 2;
         }
-        @media screen and (min-width:600px) {
-            td{
-                font-size: small;
-                height: 50px;
-            }
-            .timeTable td{
-                display: flex;
-               height: 50px;
-               border-right:1px solid #cacaca;
-            }
-
-        }
+ 
         .timeTable td{
+           border-top: 1px solid #cacaca;
             display: flex;
-           height: 30px;
+           height: 60px;
            border-right:1px solid #cacaca;
         }
-   
+        
         .tableau_blue{
             background-color: lightblue;
             color: black;
-            padding: 4px;
-            border-radius: 10px;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-           
-            
+            padding-bottom: 10px;
+            border-radius: 7px;
+          /*  height: 100%;*/
+
         }
         .tableau_orange{
             background-color: bisque;
             color: black;
            padding: 4px;
-            border-radius: 10px;
-            text-align: center;
-            width: 100%;
-            height: 100%;
+           border-radius: 7px;
+           /* height: 100%;*/
            
         }
         .tableau_green{
-            width: 100%;
-            height: 100%;
+          /*  width: 100%;
+           height: 100%;*/
             background-color: rgb(174, 255, 127);
             color: black;
            padding: 4px;
-            border-radius: 10px;
-            text-align: center;
+           border-radius: 7px;
+       
         }
+        .tableau_pink{
+            /*  width: 100%;
+             height: 100%;*/
+              background-color:pink;
+             padding: 4px;
+             border-radius: 7px;
+        } 
+
         .colspan{
             display: flex;
         }
@@ -82,7 +77,29 @@
 
          .contentTable{
             display: flex;
+           
          }
+         .sessionTable td{
+          
+            font-size: 8px;
+            overflow: hidden;
+            max-lines: 2;
+         }
+         .first{
+          height: 80px;
+         }
+    
+         @media screen and (min-width:600px) {
+            td{
+                font-size: x-small;
+                height: 50px;
+            }
+            .timeTable td{
+               display: flex;
+               height: 50px;
+               border-right:1px solid #cacaca;
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,6 +134,10 @@
             <td>
                 10:30
             </td>
+        </tr>
+        <tr>
+            <td style="border: 0px;
+            border-right:1px solid  #cacaca "></td>
         </tr>
         <tr>
             <td>
@@ -183,7 +204,7 @@
     <table class="contentTable">
         <tr>
             <td>
-                <div class="tableau_blue">
+                <div class="tableau_blue" style="height: 100%;">
                     (08h00-08h30) <br>
                 Enregistrement des participants <br>
                 </div>
@@ -192,7 +213,7 @@
     
         <tr>
             <td>
-                <div class="tableau_orange">
+                <div class="tableau_orange" style="height: 100%;">
                     (08h30-09h00) <br>
                     Mot de bienvenue par Mr.Koudil
                     <br>
@@ -203,7 +224,7 @@
         <tr>
            
             <td  rowspan="3">
-                <div class="tableau_orange">
+                <div class="tableau_orange" style="height: 100%;">
                     (9h00-10h00) <br>
                     Plénière par Dr. Salvatore Citraro   <br>                                                                                                                                                      
                     "Beyond Structure: Exploring Feature-rich Networks for Social Media and Language Analysis"
@@ -211,87 +232,209 @@
                 </div>
             </td>
         </tr>
+        <tr>
+            <td></td>
+            
+          </tr>
+          <tr>
+            <td></td>
+            
+          </tr>
+     
+        <tr>
+           
+            <td  rowspan="3">
+                <div class="tableau_pink" style="height: 100%;">
+                    (10h05-11h00) <br>
+                    <br>
+                                                                                                                                                                     
+                    Pause Café- Posters
+                    <br>
+                </div>
+            </td>
+        </tr>
 
-        <tr><td></td></tr>
+     
+       
+     
+      <tr>
+        <td></td>
+        
+      </tr>
+      <tr>
+        <td></td>
+        
+      </tr>
+      <tr>
+        <td> 
+         <table style="width: 100%;">
+            <tr style="background-color: antiquewhite;">
+                <td style="width:26%;   border-right:1px solid #cacaca">
+                   
+                   <b>AI techniques</b><br>
+                    Salle:  XXX    
+                    <br>Mr.Zegour
+                </td>
+                <td style="width:26%;  border-right:1px solid #cacaca">
+                   
+                     
+                    <b>AI-powered Applications</b><br>
+                    Salle:  XXX    
+                    <br>Mr.Haddadou
+                </td>
+                <td style="width:26%;  border-right:1px solid #cacaca">
+                   
+                      
+                    <b>Emerging Technologies</b><br>
+                    Salle:  XXX    
+                    <br>Mr. Ghomari
+                </td>
+                <td style="width:19%">
+                   
+                      
+                    <b>Data Science Applications</b><br>
+                    Salle:  XXX    
+                    <br>Mr. Mrs
+                </td>
+               
+         
+            </tr>
+         </table>
+  
+        </td>
+
+        
+      </tr>
+
+
+        <tr >
+            <td  rowspan="4">
+               <table class="sessionTable" style="border:0px ; width:100%">
+                <tr >
+                    <td  >
+              <div >
+                    <div class="tableau_pink " >
+                        (11h00-11h20) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+            
+                    <div class="tableau_orange">
+                        (11h25-11h45) <br>
+                        Survey on Solving Methods Of Inverse Problems
+                        <br>
+                    </div>
+                    <div class="tableau_blue">
+                        (11h50-12h10) <br>
+                        Language Models for Data Preparation Automation : Literature Review and Case Study
+                        <br>
+                    </div>
+                    
+                </div>
+                </td>
+                <td >
+                    <div class="tableau_pink">
+                        (11h25-11h45) <br>
+                        Partitioned Trees
+                        <br>
+                    </div>
+            
+                    <div class="tableau_orange">
+                        (11h25-11h45) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+                    <div class="tableau_blue">
+                        (11h25-11h45) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+                    <div class="tableau_pink">
+                        (11h25-11h45) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+                </td>
+                <td >
+                    <div class="tableau_pink">
+                        (11h25-11h45) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+            
+                    <div class="tableau_orange">
+                        (11h25-11h45) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+                    <div class="tableau_blue">
+                        (11h25-11h45) <br>
+                        A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
+                        <br>
+                    </div>
+                    
+                </td>
+                <td >
+                    <div class="tableau_pink">
+                        (11h00-11h20) <br>
+                        Partitioned Trees
+                        <br>
+                    </div>
+            
+                    <div class="tableau_orange">
+                        (11h25-11h45) <br>
+                        Monte Carlo Tree Search for Community Detection MCTS-CD
+                        <br>
+                    </div>
+                    <div class="tableau_blue">
+                        (11h50-12h10) <br>
+                        Business Process Activities Prediction through Capsule Neural Net framework
+                        <br>
+                    </div>
+                    <div class="tableau_pink">
+                        (12H15-12h35) <br>
+                        From  Conventional ETL To RDF KG mappings: Retrospective review
+                        <br>
+                    </div>
+                </td>
+                </tr>
+                
+                
+               </table>
+            </td>
+         
+        </tr>
       
-      <tr>
+      <tr> <td>
+
+      </td></tr>
+      <tr >
         <td></td>
       </tr>
-      <tr>
-        <td></td>
-      </tr>
-      <tr>
+      <tr >
         <td></td>
       </tr>
         <tr>
-           
-
-            <td class="colspan" >
-                <div class="tableau_orange">
-                    (11h00-11h20) <br>
-                    A hybrid of Genetic Algorithm and Reinforcement Learning based Local Search for enhanced Community 
-                    <br>
-                </div>
-                <div class="tableau_blue">
-                    (11h00-11h20) <br>
-                    Survey on Solving Methods Of Inverse Problems
-                    <br>
-                </div>
-                <div class="tableau_green">
-                    (11h50-12h10) <br>
-                    Language Models for Data Preparation Automation : Literature Review and Case Study
+            <td>
+                <div class="tableau_pink" style="height:100%">
+                    (12h45-14h00) <br>
+                    Pause Dejeuner
 
                     <br>
                 </div>
             </td>
-           
-          
-        </tr>
-       
-       
-        <tr>
-           
-            <td class="colspan">
-                <div class="tableau_orange">
-                    (11h25-11h45) <br>
-                    Survey on Solving Methods Of Inverse Problems
-                    <br>
-                </div>
             
-                <div class="tableau_blue">
-                    (11h25-11h45) <br>
-                    Predicting Discourse Coherence Using Deep Neural Networks
-                    <br>
-                </div>
-          
-                <div class="tableau_green">
-                    (11h25-11h45) <br>
-                    Monte Carlo Tree Search for Community Detection MCTS-CD
+        </tr>
+        <tr>
+            <td>
+                <div class="tableau_orange" style="height:100%">
+                    (14h00-16h30) <br>
+                    Sortie de groupe
+
                     <br>
                 </div>
             </td>
-        </tr>
-        <tr>
             
-            <td class="colspan" >
-                <div class="tableau_orange">
-                    (11h25-11h45) <br>
-                    Survey on Solving Methods Of Inverse Problems
-                    <br>
-                </div>
-            
-                <div class="tableau_blue">
-                    (11h25-11h45) <br>
-                    Predicting Discourse Coherence Using Deep Neural Networks
-                    <br>
-                </div>
-          
-                <div class="tableau_green">
-                    (11h25-11h45) <br>
-                    Monte Carlo Tree Search for Community Detection MCTS-CD
-                    <br>
-                </div>
-            </td>
         </tr>
        
 
