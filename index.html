@@ -6,43 +6,67 @@
     <title>Agenda</title>
     <style>
         body{
-            font-size:small;
+          
+            font-family: Arial, Helvetica, sans-serif;
         }
         table{
            
-            width: 100%;
+           width: 95%;
             border-top: 1px solid #cacaca;
             border-bottom: 1px solid #cacaca;
             border-collapse: collapse;
         }
+  
         td {
-          
             color: rgb(63, 63, 63);
-            border-right:1px solid #cacaca;
-          
+            height: 30px;
+            font-size:xx-small;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        .time{
-          
-            border-top: 1px solid #cacaca;
-           
+        @media screen and (min-width:600px) {
+            td{
+                font-size: small;
+                height: 50px;
+            }
+            .timeTable td{
+                display: flex;
+               height: 50px;
+               border-right:1px solid #cacaca;
+            }
+
         }
+        .timeTable td{
+            display: flex;
+           height: 30px;
+           border-right:1px solid #cacaca;
+        }
+   
         .tableau_blue{
-            background-color: rgb(174, 223, 242);
+            background-color: lightblue;
             color: black;
             padding: 4px;
             border-radius: 10px;
-           
             text-align: center;
+            width: 100%;
+            height: 100%;
+           
+            
         }
         .tableau_orange{
-            background-color: rgb(251, 200, 107);
+            background-color: bisque;
             color: black;
            padding: 4px;
             border-radius: 10px;
             text-align: center;
+            width: 100%;
+            height: 100%;
+           
         }
         .tableau_green{
-            background-color:rgb(158, 246, 158);
+            width: 100%;
+            height: 100%;
+            background-color: rgb(174, 255, 127);
             color: black;
            padding: 4px;
             border-radius: 10px;
@@ -51,28 +75,122 @@
         .colspan{
             display: flex;
         }
+    
+        .timeTable {
+            width: 0%;
+         }
+
+         .contentTable{
+            display: flex;
+         }
     </style>
 </head>
 <body>
-    <table>
+  <div class="colspan">
+    <table class ="timeTable">
         <tr>
-            <td class="time" rowspan="2" >
+            <td>
                 08:00
             </td>
+        </tr>
+        <tr>
+            <td>
+                08:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                09:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                09:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                10:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                10:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                11:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                11:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                13:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                13:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                14:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                14:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                15:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                15:30
+            </td>
+        </tr>
+        <tr>
+            <td>
+                16:00
+            </td>
+        </tr>
+        <tr>
+            <td>
+                16:30
+            </td>
+        </tr>
+      
+    </table>
+    <table class="contentTable">
+        <tr>
             <td>
                 <div class="tableau_blue">
                     (08h00-08h30) <br>
                 Enregistrement des participants <br>
                 </div>
             </td>
-
         </tr>
-       <tr></tr>
+    
         <tr>
-            <td class="time" rowspan="2" >
-        
-                08:30
-            </td>
             <td>
                 <div class="tableau_orange">
                     (08h30-09h00) <br>
@@ -81,13 +199,10 @@
                 </div>
             </td>
         </tr>
-        <tr></tr>
+      
         <tr>
-            <td class="time" >
-                
-                09:00
-            </td>
-            <td rowspan="2" >
+           
+            <td  rowspan="3">
                 <div class="tableau_orange">
                     (9h00-10h00) <br>
                     Plénière par Dr. Salvatore Citraro   <br>                                                                                                                                                      
@@ -97,29 +212,20 @@
             </td>
         </tr>
 
+        <tr><td></td></tr>
+      
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
         <tr>
-            <td class="time" >
+           
 
-                09:30
-            </td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td class="time">
-                10:00
-            </td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td class="time">
-                10:30
-            </td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td class="time" >
-                11:00
-            </td>
             <td class="colspan" >
                 <div class="tableau_orange">
                     (11h00-11h20) <br>
@@ -128,12 +234,12 @@
                 </div>
                 <div class="tableau_blue">
                     (11h00-11h20) <br>
-                    Synergizing Pharmacophore Modeling and Deep Learning for Predicting Molecular Activity                 
+                    Survey on Solving Methods Of Inverse Problems
                     <br>
                 </div>
                 <div class="tableau_green">
-                    (11h00-11h20) <br>
-                    Resource Allocation in 5G networks and Beyond: A Comprehensive Survey
+                    (11h50-12h10) <br>
+                    Language Models for Data Preparation Automation : Literature Review and Case Study
 
                     <br>
                 </div>
@@ -144,10 +250,8 @@
        
        
         <tr>
-            <td class="time">
-                11:30
-            </td>
-            <td class="colspan" rowspan="2">
+           
+            <td class="colspan">
                 <div class="tableau_orange">
                     (11h25-11h45) <br>
                     Survey on Solving Methods Of Inverse Problems
@@ -168,9 +272,7 @@
             </td>
         </tr>
         <tr>
-            <td class="time">
-                12:00
-            </td>
+            
             <td class="colspan" >
                 <div class="tableau_orange">
                     (11h25-11h45) <br>
@@ -191,53 +293,10 @@
                 </div>
             </td>
         </tr>
-        <tr>
-            <td class="time">
-                12:30
-            </td>
-        </tr>
-    
-        <tr>
-            <td class="time">
-                13;00
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                13:30
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                14:00
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                14:30
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                15:00
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                15:30
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                16:00
-            </td>
-        </tr>
-        <tr>
-            <td class="time">
-                16:30
-            </td>
-        </tr>
+       
 
     </table>
+
+  </div>
 </body>
 </html>
